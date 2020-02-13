@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Dosen;
+use App\Hobi;
+use App\Mahasiswa;
+use App\wali;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(RelasiSeeder::class);
     }
 }
